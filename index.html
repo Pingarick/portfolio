@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Василий (Pingarick) — Python / Android разработчик</title>
+<meta name="description" content="Telegram-боты, парсеры, автоматизация с ИИ и Android-приложения. Портфолио и услуги.">
+<style>
+  :root {
+    --bg: #0b0f19;
+    --panel: #131a2a;
+    --panel-2: #0f1523;
+    --line: #232d45;
+    --text: #e7ebf5;
+    --muted: #94a2c0;
+    --accent: #7c6cff;
+    --accent-2: #4cc2ff;
+    --ok: #3ddc97;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent-2); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 0 20px; }
+
+  /* Hero */
+  .hero { padding: 72px 0 40px; background:
+    radial-gradient(900px 420px at 15% -10%, rgba(124,108,255,.28), transparent 60%),
+    radial-gradient(700px 380px at 90% 0%, rgba(76,194,255,.16), transparent 60%);
+  }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px;
+    background: rgba(61,220,151,.08); color: var(--ok); font-size: 14px; font-weight: 600;
+  }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok); }
+  h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.15; margin: 18px 0 14px; }
+  h1 span { color: var(--muted); font-weight: 500; }
+  .lead { font-size: 18px; color: var(--muted); max-width: 720px; }
+  .lead b { color: var(--text); }
+  .cta { margin-top: 26px; display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 11px 20px; border-radius: 12px; font-weight: 600;
+    border: 1px solid var(--line); color: var(--text); background: var(--panel);
+  }
+  .btn.primary { background: linear-gradient(135deg, var(--accent), #5a8dff); border: none; }
+  .btn:hover { text-decoration: none; filter: brightness(1.1); }
+
+  section { padding: 44px 0; }
+  .kicker { color: var(--accent-2); font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+  h2 { font-size: 26px; margin: 8px 0 22px; }
+
+  .grid { display: grid; gap: 16px; }
+  .services { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+  .service { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
+  .service h3 { margin: 0 0 8px; font-size: 17px; }
+  .service p { margin: 0 0 12px; color: var(--muted); font-size: 14.5px; }
+  .price { color: var(--ok); font-weight: 700; }
+
+  .projects { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 18px;
+    overflow: hidden; display: flex; flex-direction: column;
+  }
+  .shots { display: flex; gap: 10px; padding: 16px 16px 0; }
+  .shots img {
+    width: 50%; border-radius: 12px; border: 1px solid var(--line);
+    aspect-ratio: 9 / 19; object-fit: cover; object-position: top; background: #0a0e16;
+  }
+  .term {
+    margin: 16px 16px 0; background: #0a0e16; border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px; font: 13px/1.55 "Cascadia Code", Consolas, monospace; color: #b9c6e4; white-space: pre-wrap;
+  }
+  .term .u { color: var(--accent-2); }
+  .term .a { color: var(--ok); }
+  .card-body { padding: 16px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .card-body h3 { margin: 0; font-size: 18px; }
+  .card-body p { margin: 0; color: var(--muted); font-size: 14.5px; }
+  .card-links { margin-top: auto; font-size: 14px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 7px; }
+  .chip {
+    font-size: 12.5px; padding: 4px 10px; border-radius: 999px;
+    background: var(--panel-2); border: 1px solid var(--line); color: var(--muted);
+  }
+  .stack .chip { font-size: 13.5px; padding: 6px 13px; }
+
+  .about { background: var(--panel-2); border: 1px solid var(--line); border-radius: 18px; padding: 24px; color: var(--muted); }
+  .about b { color: var(--text); }
+
+  footer { border-top: 1px solid var(--line); padding: 34px 0 54px; margin-top: 30px; }
+  .contacts { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+  .contacts a { padding: 9px 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); color: var(--text); }
+  .contacts a:hover { text-decoration: none; border-color: var(--accent); }
+  .note { color: var(--muted); font-size: 13.5px; margin-top: 16px; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge"><span class="dot"></span>Открыт к стажировке и заказам</span>
+    <h1>Привет, я Василий <span>(Pingarick)</span></h1>
+    <p class="lead">
+      Делаю <b>Telegram-ботов, парсеры и Android-приложения</b> на Python и Kotlin.
+      Довожу проекты до продакшена: боты работают на VPS под systemd, приложения собираются в подписанные APK,
+      автоматизацию ускоряю ИИ — от распознавания фото до ответов клиентам.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">Смотреть проекты</a>
+      <a class="btn" href="#contacts">Связаться</a>
+    </div>
+  </div>
+</header>
+
+<section id="services">
+  <div class="wrap">
+    <div class="kicker">Услуги</div>
+    <h2>Чем могу помочь</h2>
+    <div class="grid services">
+      <div class="service">
+        <h3>Telegram-боты</h3>
+        <p>Заявки, записи, уведомления, админ-панель, оплата, интеграции с CRM и Google Sheets.</p>
+        <div class="price">от 7 000 ₽</div>
+      </div>
+      <div class="service">
+        <h3>Парсеры и сбор данных</h3>
+        <p>Сбор товаров, цен и объявлений; выгрузка в Excel / Google Sheets / Telegram, работа по расписанию.</p>
+        <div class="price">от 5 000 ₽</div>
+      </div>
+      <div class="service">
+        <h3>ИИ-интеграции</h3>
+        <p>Ответы на сообщения по базе знаний, распознавание фото и документов, генерация текстов.</p>
+        <div class="price">от 10 000 ₽</div>
+      </div>
+      <div class="service">
+        <h3>Android-приложения</h3>
+        <p>Приложения на Kotlin: от MVP до подписанного релиза. Автоматизация процессов внутри компании.</p>
+        <div class="price">по задаче</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="kicker">Портфолио</div>
+    <h2>Проекты</h2>
+    <div class="grid projects">
+
+      <article class="card">
+        <div class="shots">
+          <img src="assets/antisdvg-home.png" alt="Anti-SDVG — главный экран" loading="lazy">
+          <img src="assets/antisdvg-reading.png" alt="Anti-SDVG — проверка чтения" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Anti-SDVG — анти-прокрастинация</h3>
+          <p>Android-приложение блокирует соцсети, пока пользователь не прочитает книгу. DeepSeek проверяет пересказ,
+             заработанные минуты копятся в «кошелёк развлечений» и тратятся на разблокировку.</p>
+          <div class="chips">
+            <span class="chip">Kotlin</span><span class="chip">MVVM + Clean</span><span class="chip">Room</span>
+            <span class="chip">AccessibilityService</span><span class="chip">CameraX</span><span class="chip">ML Kit</span>
+            <span class="chip">DeepSeek API</span>
+          </div>
+          <div class="card-links"><a href="https://github.com/Pingarick/antisdvg">Исходный код →</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shots">
+          <img src="assets/calorie-onboard.png" alt="Калории — онбординг" loading="lazy">
+          <img src="assets/calorie-picker.png" alt="Калории — выбор продукта" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Калории — дневник питания</h3>
+          <p>Фото еды → КБЖУ через vision-модель, дневник по приёмам пищи, норма по формуле Миффлина — Сан Жеора,
+             кольцо калорий и офлайн-хранилище.</p>
+          <div class="chips">
+            <span class="chip">Kotlin</span><span class="chip">Room</span><span class="chip">CameraX</span>
+            <span class="chip">OkHttp</span><span class="chip">Gemini Vision</span>
+          </div>
+          <div class="card-links"><a href="https://github.com/Pingarick/calorie-app-android">Исходный код →</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shots">
+          <img src="assets/kwork-dashboard.png" alt="Kwork Scout — карточки заказов" loading="lazy">
+          <img src="assets/kwork-proposal.png" alt="Kwork Scout — отклик" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Kwork Scout — конвейер поиска заказов</h3>
+          <p>Парсит новые заказы, скорит их по профилю фрилансера, оценивает риски заказчика и генерирует
+             коммерческие предложения. Каждые 15 минут присылает в Telegram только новое, отклик — кнопкой.</p>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">Playwright</span><span class="chip">LLM</span>
+            <span class="chip">Telegram Bot API</span><span class="chip">systemd / VPS</span>
+          </div>
+          <div class="card-links"><span class="chip">Код приватный — покажу по запросу</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="term">
+          <span class="u">Покупатель:</span> Добрый день, торг есть?
+          <span class="a">ИИ-продавец:</span> Здравствуйте! Да, по цене возможен
+          небольшой торг. Товар в отличном состоянии, готов
+          встретиться сегодня после 18:00.
+        </div>
+        <div class="card-body">
+          <h3>Avito AI Seller</h3>
+          <p>Прототип ИИ-продавца для Avito: знает базу товаров и минимальные цены, отвечает покупателям
+             через DeepSeek, ведёт историю диалогов. Админка — прямо в Telegram.</p>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">aiogram 3</span>
+            <span class="chip">SQLAlchemy</span><span class="chip">DeepSeek</span>
+          </div>
+          <div class="card-links"><a href="https://github.com/Pingarick/avito-ai-seller">Исходный код →</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="term">
+          <span class="u">Вы:</span> [фото тарелки с пастой]
+          <span class="a">Бот:</span> Паста с курицей — ~520 ккал
+          Б 32 г · Ж 14 г · У 61 г
+          <span class="u">Вы:</span> /mealplan 2200
+          <span class="a">Бот:</span> Рацион на неделю готов ↓
+        </div>
+        <div class="card-body">
+          <h3>Calorie Bot</h3>
+          <p>Telegram-бот считает КБЖУ по фото еды (Gemini Vision), ведёт профиль и цели, генерирует рацион
+             на неделю и хранит дневник в SQLite.</p>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">python-telegram-bot</span>
+            <span class="chip">Gemini Vision</span><span class="chip">SQLite</span>
+          </div>
+          <div class="card-links"><a href="https://github.com/Pingarick/calorie_bot">Исходный код →</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="term">
+          <span class="u">Вы:</span> найди договор аренды
+          <span class="a">Бот:</span> Нашёл 3 файла на Яндекс.Диске:
+          1. Договор_аренды_2026.pdf
+          2. ...
+        </div>
+        <div class="card-body">
+          <h3>VK + Яндекс.Диск</h3>
+          <p>Бот для VK: ищет файлы на Яндекс.Диске по названию прямо из переписки, раздаёт ссылки на скачивание.</p>
+          <div class="chips">
+            <span class="chip">Python</span><span class="chip">VK API</span><span class="chip">Яндекс.Диск API</span>
+          </div>
+          <div class="card-links"><a href="https://github.com/Pingarick/vk-yadisk-bot">Исходный код →</a></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="wrap">
+    <div class="kicker">Технологии</div>
+    <h2>С чем работаю</h2>
+    <div class="chips stack">
+      <span class="chip">Python</span><span class="chip">Kotlin</span><span class="chip">aiogram</span>
+      <span class="chip">python-telegram-bot</span><span class="chip">Playwright</span><span class="chip">SQLAlchemy</span>
+      <span class="chip">SQLite</span><span class="chip">Room</span><span class="chip">MVVM</span>
+      <span class="chip">Coroutines</span><span class="chip">CameraX</span><span class="chip">ML Kit</span>
+      <span class="chip">OkHttp / Retrofit</span><span class="chip">LLM API (DeepSeek, Gemini)</span>
+      <span class="chip">Linux VPS / systemd</span><span class="chip">Git</span><span class="chip">REST API</span>
+    </div>
+    <div class="about" style="margin-top:22px">
+      <b>Коротко о себе.</b> Учусь на 2 курсе «Программной инженерии», код пишу около двух лет.
+      Веду проекты полным циклом: сам проектирую, пишу, разворачиваю на сервере и поддерживаю.
+      Сейчас ищу стажировку (Python / Android) и беру небольшие заказы на автоматизацию.
+    </div>
+  </div>
+</section>
+
+<footer id="contacts">
+  <div class="wrap">
+    <h2>Связаться</h2>
+    <div class="contacts">
+      <a href="https://t.me/pingarick">Telegram: @pingarick</a>
+      <a href="https://github.com/Pingarick">github.com/Pingarick</a>
+      <a href="mailto:vasiliyart1@gmail.com">vasiliyart1@gmail.com</a>
+    </div>
+    <p class="note">
+      Отвечаю в течение дня. Расскажите задачу — предложу решение, срок и оценку бесплатно.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
