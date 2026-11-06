@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Василий (Pingarick) — Python / Android разработчик</title>
-<meta name="description" content="Telegram-боты, парсеры, автоматизация с ИИ и Android-приложения. Портфолио и услуги.">
+<title>Василий (Pingarick) — Python / Android / 1С разработчик</title>
+<meta name="description" content="Telegram-боты, парсеры, сайты, 1С и Android-приложения. Портфолио и услуги.">
 <style>
   :root {
     --bg: #0b0f19;
@@ -108,9 +108,9 @@
     <span class="badge"><span class="dot"></span>Открыт к стажировке и заказам</span>
     <h1>Привет, я Василий <span>(Pingarick)</span></h1>
     <p class="lead">
-      Делаю <b>Telegram-ботов, парсеры и Android-приложения</b> на Python и Kotlin.
-      Довожу проекты до продакшена: боты работают на VPS под systemd, приложения собираются в подписанные APK,
-      автоматизацию ускоряю ИИ — от распознавания фото до ответов клиентам.
+      Делаю <b>Telegram-ботов, парсеры, сайты и Android-приложения</b> на Python, Kotlin и веб-стеке.
+      Довожу проекты до продакшена: боты работают на VPS под systemd, сайты выходят на домен,
+      приложения собираются в подписанные APK. Отдельно дорабатываю 1С — обработки, отчёты и выгрузки в Excel.
     </p>
     <div class="cta">
       <a class="btn primary" href="#projects">Смотреть проекты</a>
@@ -142,6 +142,16 @@
       <div class="service">
         <h3>Android-приложения</h3>
         <p>Приложения на Kotlin: от MVP до подписанного релиза. Автоматизация процессов внутри компании.</p>
+        <div class="price">по задаче</div>
+      </div>
+      <div class="service">
+        <h3>Сайты под заказ</h3>
+        <p>Лендинги и витрины: вёрстка, адаптив под телефон, формы заявок, подключение домена и хостинга.</p>
+        <div class="price">по задаче</div>
+      </div>
+      <div class="service">
+        <h3>1С-доработки</h3>
+        <p>Внешние обработки, отчёты на СКД, печатные формы, выгрузка данных в Excel, проверка на тестовой базе.</p>
         <div class="price">по задаче</div>
       </div>
     </div>
@@ -262,6 +272,60 @@
         </div>
       </article>
 
+      <article class="card">
+        <div class="term">
+          <span class="u">Вы:</span> 1.e4 e5 2.Nf3 Nc6 3.Bb5
+          <span class="a">Тренер:</span> Испанская партия. Слабое место —
+          давление на e5. Лучший ход: 3...a6.
+        </div>
+        <div class="card-body">
+          <h3>Шахматный ИИ-тренер</h3>
+          <p>Android-приложение: игра с движком, разбор партии, подсказки по ходу, тренировка,
+             история и статистика, экспорт PGN. Тренер объясняет ошибки простым языком.</p>
+          <div class="chips">
+            <span class="chip">Kotlin</span><span class="chip">Stockfish</span><span class="chip">Room</span>
+            <span class="chip">Android</span>
+          </div>
+          <div class="card-links"><span class="chip">Код приватный — покажу по запросу</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="term">
+          <span class="u">Клиент:</span> нужен сайт для бани, запись и цены
+          <span class="a">Готово:</span> лендинг, адаптив, форма заявки,
+          домен и хостинг
+        </div>
+        <div class="card-body">
+          <h3>Сайты под заказ</h3>
+          <p>Лендинги и витрины для локального бизнеса: структура, тексты, вёрстка, мобильная версия,
+             формы заявок и базовая SEO-разметка. От ТЗ до публикации на домене.</p>
+          <div class="chips">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+            <span class="chip">Адаптив</span><span class="chip">SEO</span>
+          </div>
+          <div class="card-links"><span class="chip">Код приватный — покажу по запросу</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="term">
+          <span class="u">Задача:</span> выгрузить продажи за год в Excel
+          <span class="a">1С:</span> внешняя обработка, отчёт на СКД,
+          печатная форма, проверка на тестовой базе
+        </div>
+        <div class="card-body">
+          <h3>1С: выгрузка и отчёты</h3>
+          <p>Внешние обработки и отчёты: выборка документов, оптимизация запросов, выгрузка в Excel,
+             печатные формы. Проверяю результат на тестовой базе, а не «на глаз».</p>
+          <div class="chips">
+            <span class="chip">1С:Предприятие</span><span class="chip">СКД</span><span class="chip">BSL</span>
+            <span class="chip">Excel</span>
+          </div>
+          <div class="card-links"><span class="chip">Код приватный — покажу по запросу</span></div>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
@@ -271,16 +335,19 @@
     <div class="kicker">Технологии</div>
     <h2>С чем работаю</h2>
     <div class="chips stack">
-      <span class="chip">Python</span><span class="chip">Kotlin</span><span class="chip">aiogram</span>
+      <span class="chip">Python</span><span class="chip">Kotlin</span><span class="chip">1С:Предприятие</span>
+      <span class="chip">HTML / CSS</span><span class="chip">JavaScript</span><span class="chip">aiogram</span>
       <span class="chip">python-telegram-bot</span><span class="chip">Playwright</span><span class="chip">SQLAlchemy</span>
       <span class="chip">SQLite</span><span class="chip">Room</span><span class="chip">MVVM</span>
       <span class="chip">Coroutines</span><span class="chip">CameraX</span><span class="chip">ML Kit</span>
       <span class="chip">OkHttp / Retrofit</span><span class="chip">LLM API (DeepSeek, Gemini)</span>
+      <span class="chip">ComfyUI / SDXL</span>
       <span class="chip">Linux VPS / systemd</span><span class="chip">Git</span><span class="chip">REST API</span>
     </div>
     <div class="about" style="margin-top:22px">
       <b>Коротко о себе.</b> Учусь на 2 курсе «Программной инженерии», код пишу около двух лет.
       Веду проекты полным циклом: сам проектирую, пишу, разворачиваю на сервере и поддерживаю.
+      Кроме ботов и Android делаю сайты под заказ и дорабатываю 1С — от внешней обработки до выгрузки в Excel.
       Сейчас ищу стажировку (Python / Android) и беру небольшие заказы на автоматизацию.
     </div>
   </div>

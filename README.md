@@ -2,7 +2,7 @@
 
 Страница: **https://pingarick.github.io/portfolio/**
 
-Python / Android разработчик: Telegram-боты, парсеры, автоматизация с ИИ, мобильные приложения.
+Python / Android / 1С разработчик: Telegram-боты, парсеры, сайты, автоматизация с ИИ, мобильные приложения.
 
 - Telegram: [@pingarick](https://t.me/pingarick)
 - GitHub: [github.com/Pingarick](https://github.com/Pingarick)
